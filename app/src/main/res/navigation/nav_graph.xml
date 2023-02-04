@@ -10,10 +10,18 @@
         android:id="@+id/firstFragment"
         android:name="com.example.homework7_3.FirstFragment"
         android:label="fragment_first"
-        tools:layout="@layout/fragment_first" />
+        tools:layout="@layout/fragment_first" />gi
+    <action
+        android:id="@+id/action_rickFragment_to_firstFragment"
+        app:destination="@id/firstFragment"/>
     <fragment
-        android:id="@+id/srcondFragment"
+        android:id="@+id/secondFragment"
         android:name="com.example.homework7_3.SecondFragment"
         android:label="fragment_srcond"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second" >
+    <argument
+        android:name="model"
+        app:argType="java.io.Serializable"/>
+
+    </fragment>
 </navigation>
